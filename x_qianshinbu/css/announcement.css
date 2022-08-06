@@ -1,0 +1,59 @@
+.announcement{
+    position: absolute;
+    top: 215%;
+    left: 5%;
+    width: 350px;
+    height: 300px;
+    border-radius: 2%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: announcement;
+    animation-duration: 0.2s;
+}
+
+.announcement:hover{
+    animation-name: announcement_hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards
+}
+
+.announcement h1{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    right: 10%;;
+}
+
+.announcement p{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 80px;
+    left: 10%;
+    right: 10%;;
+}
+
+@keyframes announcement{
+    0%{
+        top: 210%;
+        animation-timing-function: ease;
+    }
+    100%{
+        top: 215%;
+        animation-timing-function: ease;
+    }
+}
+
+@keyframes announcement_hover{
+    0%{
+        top: 215%;
+        animation-timing-function: ease;
+    }
+
+    100%{
+        top: 210%;
+        animation-timing-function: ease;
+    }
+}

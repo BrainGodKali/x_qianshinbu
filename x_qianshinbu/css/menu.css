@@ -1,0 +1,136 @@
+.menu{
+    position: absolute;
+    top: 1000px;
+    left: 5%;
+    right: 5%;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    animation-name: menu;
+    animation-duration: 0.2s;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
+}
+
+.menu:hover{
+    animation-name: menu_hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards
+}
+
+.avatar-small img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    transform-origin:125px 125px;
+    position: absolute;
+	top: 5%;
+	left:18%;
+}
+
+.avatar-small img:hover {
+    animation-name: avatar-small;
+    animation-duration: 0.5s;
+}
+
+.name{
+    color: black;
+    font-size: 50px;
+    position: absolute;
+    top:42%;
+    left: 16.5%;
+}
+
+.introduction{
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    right: 10%;
+}
+
+@keyframes menu{
+    0%{
+        box-shadow: 0 4px 8px 0 rgba(16, 147, 255, 0.2), 0 6px 20px 0 rgba(0, 140, 255, 0.19);
+        animation-timing-function: ease;
+    }
+    100%{
+        box-shadow: 0 4px 8px 0 rgba(16, 147, 255, 0.2), 0 6px 20px 0 rgba(0, 140, 255, 0.19);
+        animation-timing-function: ease;
+    }
+}
+
+@keyframes menu_hover{
+    0%{
+        box-shadow: 0 4px 8px 0 rgba(16, 147, 255, 0.2), 0 6px 20px 0 rgba(0, 140, 255, 0.19);
+        animation-timing-function: ease;
+    }
+
+    100%{
+        box-shadow: 0 4px 8px 0 rgba(16, 147, 255, 0.2), 0 6px 20px 0 rgba(0, 140, 255, 0.19);
+        animation-timing-function: ease;
+    }
+}
+
+@keyframes avatar-small{
+    0%{
+        transform:rotate(0deg);
+        animation-timing-function: ease;
+    }
+    100%{
+        transform:rotate(360deg);
+        animation-timing-function: ease;
+    }
+}
+
+@media screen  and (max-device-width:900px){
+    .menu{
+        position: absolute;
+        top: 1000px;
+        left: 5%;
+        right: 5%;
+        height: 690px;
+        background-color: rgb(255, 255, 255);
+        animation-name: menu;
+        animation-duration: 0.2s;
+        border-radius: 2%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        opacity: 0.9;
+    }
+    
+    .menu:hover{
+        animation-name: menu_hover;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards
+    }
+    
+    /* .avatar-small img {
+        height: 190px;
+        width: 190px;
+        border-radius: 100%;
+        transform-origin:125px 125px;
+    }
+    
+    .avatar-small img:hover {
+        animation-name: avatar-small;
+        animation-duration: 0.5s;
+    } */
+    
+    .name{
+        color: black;
+        font-size: 40px;
+        position: absolute;
+        top: 42%;
+        left: 20%;
+    }
+    
+    .introduction{
+        color: black;
+        font-size: 20px;
+        position: absolute;
+        top: 60%;
+        left: 15%;
+        right: 10%;
+    }
+}

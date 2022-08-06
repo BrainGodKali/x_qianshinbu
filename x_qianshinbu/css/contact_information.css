@@ -1,0 +1,62 @@
+.contact_information{
+    position: absolute;
+    top: 140%;
+    left: 30%;
+    right: 5%;
+    height: 180px;
+    border-radius: 2%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: contact_information;
+    animation-duration: 0.2s;
+}
+
+.contact_information:hover{
+    animation-name: contact_information_hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards
+}
+
+.bilibili{
+    height: 120px;
+    position: absolute;
+    top: 12%;
+    left: 12%;
+}
+
+.github{
+    height: 120px;
+    position: absolute;
+    top: 12%;
+    left: 42%;
+}
+
+.emsil{
+    height: 120px;
+    position: absolute;
+    top: 12%;
+    right: 12%;
+}
+
+@keyframes contact_information{
+    0%{
+        top: 135%;
+        animation-timing-function: ease;
+    }
+    100%{
+        top: 140%;
+        animation-timing-function: ease;
+    }
+}
+
+@keyframes contact_information_hover{
+    0%{
+        top: 140%;
+        animation-timing-function: ease;
+    }
+
+    100%{
+        top: 135% ;
+        animation-timing-function: ease;
+    }
+}

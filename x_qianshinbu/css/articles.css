@@ -1,0 +1,58 @@
+.articles{
+    position: absolute;
+    top: 169%;
+    left: 30%;
+    right: 5%;
+    height: 350px;
+    border-radius: 2%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: articles;
+    animation-duration: 0.2s;
+}
+
+.articles:hover{
+    animation-name: articles_hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards
+}
+
+.February_7th img{
+    height: 340px;
+    border-radius: 5%;
+    transform-origin:125px 125px;
+    position: absolute;
+	top: 2%;
+	left: 1%;
+}
+
+.February_7th p{
+    color: black;
+    font-size: 60px;
+    position: absolute;
+    top: 30px;
+    left: 380px;
+}
+
+@keyframes articles{
+    0%{
+        top: 164%;
+        animation-timing-function: ease;
+    }
+    100%{
+        top: 169%;
+        animation-timing-function: ease;
+    }
+}
+
+@keyframes articles_hover{
+    0%{
+        top: 169%;
+        animation-timing-function: ease;
+    }
+
+    100%{
+        top: 164%;
+        animation-timing-function: ease;
+    }
+}

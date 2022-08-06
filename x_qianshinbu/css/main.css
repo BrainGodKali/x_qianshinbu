@@ -1,0 +1,171 @@
+.wallpaper{
+    background-color: rgb(255, 255, 255);
+    background-image: url("../img/miku.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto; width: auto\9; width:100%;
+}
+
+
+.avatar img {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    border: 5px rgb(255, 255, 255) solid;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+	top: 400px;
+	left:50%;
+	transform: translate(-50%,-50%);
+    animation-name: enter;
+    animation-duration: 1s;
+}
+
+.site-name{
+    font-size: 50px;
+    color: aliceblue;
+    animation-name: site-name;
+    animation-duration: 1s;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 0), 0 0 5px darkblue;
+}
+
+.bilibili{
+    position: absolute;
+	top: 10px;
+    width:50px;
+    height:50px;
+    border:1px dashed #ccc;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.music{
+    position: fixed;
+    top: 50px;
+    right: 0px;
+}
+
+@keyframes enter{
+    0% {
+        opacity: 0;
+        top: 40%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        animation-timing-function: linear;
+    }
+
+    50% {
+        opacity: .5;
+        top: 45%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        animation-timing-function: linear;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        animation-timing-function: linear;
+    }
+
+}
+
+@keyframes site-name{
+    0% {
+        opacity: 0;
+        left: 6%;
+        top: -6%;
+        animation-timing-function: linear;
+    }
+
+    50% {
+        opacity: .5;
+        left: 6%;
+        top: -3%;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        opacity: 1;
+        left: 6%;
+        top: 0%;
+        animation-timing-function: linear;
+    }
+
+}
+
+@keyframes home{
+    0%{
+        opacity: 0;
+        right: 35%;
+        top: 0%;
+        animation-timing-function: linear;
+    }
+    100%{
+        opacity: 1;
+        right: 35%;
+        top: 4%;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes connect{
+    0%{
+        opacity: 0;
+        right: 25%;
+        top: 0%;
+        animation-timing-function: linear;
+    }
+    100%{
+        opacity: 1;
+        right: 25%;
+        top: 4%;
+        animation-timing-function: linear;
+    }
+}
+
+@media screen  and (max-width: 900px){
+    .wallpaper{
+    background-color: rgb(255, 255, 255);
+    background-image: url("../img/miku.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto; width: auto\9; width:100%;
+}
+
+
+.avatar img {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    border: 5px rgb(255, 255, 255) solid;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+	top: 400px;
+	left:50%;
+	transform: translate(-50%,-50%);
+    animation-name: enter;
+    animation-duration: 1s;
+}
+
+.site-name{
+    font-size: 50px;
+    color: aliceblue;
+    animation-name: site-name;
+    animation-duration: 1s;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 0), 0 0 5px darkblue;
+}
+
+.music{
+    position: fixed;
+    top: 50px;
+    right: 0px;
+}
+}
